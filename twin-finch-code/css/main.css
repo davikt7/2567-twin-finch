@@ -255,6 +255,7 @@ blockquote {
 footer {
 	font-weight: 600;
 	margin-bottom: 2.142rem;
+	text-decoration: none;
 }
 #roast p:last-child {
 	font-family: "Open Sans", sans-serif;
