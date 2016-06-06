@@ -4,9 +4,11 @@
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 1.0 - Typography
+	1.01 typefaces
 	1.1 - Headings
 	1.2 - Body Copy
 	1.3 - Buttons
+		-sprite
 	1.4 - Forms
 	1.5 - Lists
 	1.6 - Tables
@@ -16,6 +18,12 @@
 	3.3 - Footer Menu
 3.0 - Content
 	3.1 - Site Structure
+		- nav
+		- feature
+		- review
+		- roast
+		- about
+		- bottom
 	3.2 - Section Name
 	3.3 - Section Name
 4.0 - Media
@@ -26,11 +34,14 @@
 	5.4 - Alignments
 --------------------------------------------------------------*/
 /*-------font-family:"IM Fell English SC", serif;  font-family: "Pragati Narrow", sans-serif;  font-family: "Open Sans", sans-serif;-------- */
-/*------- lt. green[#86942a] off white[#f3f4ec] dk.brown[#4d301a] dk green[#507642]-------- */
+/*------- lt. green[#86942a] off white[#f3f4ec] dk.brown[#4d301a] dk green[#507642] tangreen [#b1a33b]-------- */
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
-/*-------typefaces-------- */
+#feature h3 {
+	font-size: 7.857rem;
+}
+/*-------1.01 typefaces-------- */
 html {
 	font-size: 14px;
 }
@@ -49,57 +60,43 @@ h3 {
 }
 /*--------------------------1.3 - Buttons------------------------- */
 .button {
-	background-color: #86942a;
-	border: none;
-	color: #f3f4ec;
 	padding: 0 2.142rem;
 	text-align: center;
-	text-decoration: none;
-	display: inline-block;
 	font-size: 1.714rem;
 	cursor: pointer;
-	font-family: 'Pragati Narrow', sans-serif;
 }
 #feature a {
 	margin: 2.142rem 0 4rem;
 }
 .button2 {
-	background-color: #86942a;
-	border: none;
-	color: #f3f4ec;
 	padding: 0 .714rem;
-	text-align: left;
-	text-decoration: none;
-	display: inline-block;
 	font-size: 1.428rem;
-	font-family: 'Pragati Narrow', sans-serif;
 }
 .button3 {
-	background-color: #86942a;
-	border: none;
-	color: #f3f4ec;
 	padding: 0 .714rem;
-	text-align: left;
-	text-decoration: none;
-	display: inline-block;
 	font-size: 2rem;
-	font-family: 'Pragati Narrow', sans-serif;
 	margin-top: 2.142rem;
 }
+
 #button4 {
-	background-color: #86942a;
-	border: none;
-	color: #f3f4ec;
 	padding: 0 1.714rem;
-	text-align: left;
-	text-decoration: none;
-	display: inline-block;
 	font-size: 2rem;
-	font-family: 'Pragati Narrow', sans-serif;
 	margin-top: 1rem;
 }
+
+.button2, .button3, #button4 {
+text-align: left;
+}
+.button, .button2, .button3, #button4 {
+background-color: #86942a;
+border: none;
+color: #f3f4ec;
+text-decoration: none;
+display: inline-block;	
+font-family: 'Pragati Narrow', sans-serif;	
+}
 .button2:hover, .button3:hover, #button4:hover, .button:hover{
-	background-color: #507642;
+	background-color: #b1a33b;
 }
 /*--------------------------sprite------------------------- */
 #fb {
@@ -180,6 +177,9 @@ display: inline-block;
 	color: #f3f4ec;
 	text-decoration: none;
 }
+#hero a:hover {
+	color: #b1a33b;
+}
 /*--------------------------------------------------------------
 3.0 - SITE STRUCTURE
 -------------------------------------------------------------- */
@@ -218,9 +218,6 @@ h1 {
 	margin: 1.428rem auto;
 }
 /*--------------------------feature------------------------- */
-#feature h3 {
-	font-size: 7.857rem;
-}
 #feature {
 	text-align: center;
 	font-family: "Open Sans";
@@ -252,10 +249,13 @@ blockquote {
 	font-size: 1.642rem;
 	font-weight: 300;
 }
-footer {
+footer a{
 	font-weight: 600;
 	margin-bottom: 2.142rem;
 	text-decoration: none;
+}
+footer a:hover{
+color: #b1a33b; 	
 }
 #roast p:last-child {
 	font-family: "Open Sans", sans-serif;
@@ -264,13 +264,6 @@ footer {
 	margin: 9rem 0 4rem;
 }
 /*--------------------------roast-------------------------*/
-.pad{
-padding-left: 1.5rem;	
-}
-.rst{
-padding: 4rem 0;	
-text-align: left;
-}
 .info {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 600;
@@ -305,14 +298,14 @@ margin-top: -.2143rem;
 	margin: 2rem 0 0 4rem;	
 }
 #news2 input{
-	padding: .5rem 42.86rem .7rem .2857rem;
+	padding: 1rem 42.86rem 1rem 1rem;
 }
 #news3{
 	float:right;
 	background-color: #507642;
 	border: none;
 	color: #f3f4ec;
-	padding: 0 2rem 0;
+	padding: .357rem 2rem;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -321,7 +314,7 @@ margin-top: -.2143rem;
 	margin-top: 2rem;
 }
 #news3:hover{
-	background-color: #4d301a;
+	background-color: #b1a33b;
 }
 /*--------------------------bottom-------------------------*/
 #bg2{
@@ -394,7 +387,7 @@ width:50%
 	width: 33.33%;
 }
 .col-4-6 {
-	width: 83.33%;
+	width: 66.66%;
 }
 .col-3-7 {
 	width: 14.28%;
@@ -449,6 +442,13 @@ width:50%
 /*--------------------------------------------------------------
 5.0 - Utility
 -------------------------------------------------------------- */
+.rst{
+padding: 4rem 0;	
+text-align: left;
+}
+.pad{
+padding-left: 1.5rem;	
+}
 .center {
 	margin: 0 auto;
 	float: none;
@@ -461,7 +461,7 @@ font-family: "Open Sans", sans-serif;
 font-weight: 300;
 text-align: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 	.wrapper{
 width: 95%;	
 	}
